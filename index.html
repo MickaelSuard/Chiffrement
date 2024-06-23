@@ -11,12 +11,25 @@
     <link type="text/css" rel="stylesheet" media="screen" href="css/style.css" />
 </head>
 <body>
-    <div id="container_generator">
-        <input type="button" value="Génération de clé" onclick="GenerateKeys()" />
-        <label>Clé publique : <input type="text" id="public_key" name="public_key" disabled="disabled" /></label>
-        <label>Clé privée : <input type="text" id="private_key" name="private_key" disabled="disabled" /></label>
+    <div id="grid-container-keys">
+        <div id="container-generator-keys"> 
+            <input type="button" value="Génération de clé" onclick="GenerateKeys()" />
+            <label>Clé publique : <input type="text" id="public_key" name="public_key" disabled="disabled" /></label>
+            <label>Clé privée : <input type="text" id="private_key" name="private_key" disabled="disabled" /></label>
+        </div>
     </div>
-       
-        <!-- <input type="submit" value="Trouver la clé " /> -->
+
+    <div id="grid-container-encrypt">
+        <div id="container-encrypt">
+            <label>Message clair</label>
+            <textarea name="encrypt" cols="100" rows="15"></textarea>
+        </div>
+
+        <div id="container-encrypted">
+            <label>Message crypté</label>
+            <textarea name="encrypted" cols="100" rows="15"></textarea>
+        </div>
+    </div>
+
 </body>
 </html>
