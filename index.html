@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Génération de clé RSA</title>
+    <!-- <script type="text/javascript" language="JavaScript"  src="javascript/big-integer.min.js"></script> -->
+    <script type="text/javascript" language="JavaScript"  src="javascript/rsa.js"></script>
+    <script type="text/javascript" language="JavaScript"  src="javascript/index.js"></script>
+    <link type="text/css" rel="stylesheet" media="screen" href="css/style.css" />
+</head>
+<body>
+    <div id="container_generator"></div>
+        <input type="button" value="Génération de clé" onclick="return onGeneratePrimeNumber(this.form);" />
+        <label>First Big Prime Number : <input type="text" name="first_prime_number" disabled="disabled" /></label>
+        <label>Second Big Prime Number : <input type="text" name="second_prime_number" disabled="disabled" /></label>
+        <input type="submit" value="Find RSA Key" />
+        <label>Public Key : <input type="text" name="public_key" id="public_key" /></label>
+        <label>Private Key : <input type="text" name="private_key" id="private_key" /></label>
+</body>
+</html>
